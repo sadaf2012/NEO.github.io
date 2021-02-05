@@ -1,0 +1,666 @@
+/* ========================
+1. Basic Styles
+2. Main Header
+3. Banner
+4. Get Access to Loan
+5. Why Choose
+6. Discounting Steps
+7. Testmonials
+8. FAQ
+9. Need Against Invoice
+10. Footer
+========================== */
+
+
+/* =========================
+1. Basic Styles
+============================*/
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    background-color: #202828;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px auto;
+}
+
+p,
+span {
+    margin: 0px auto;
+}
+
+ul,
+ol,
+.table {
+    margin-bottom: 0px;
+}
+
+.btn-success {
+    background-color: #01c98a;
+    border-color: #01c98a;
+    color: #000;
+    padding: 15px 20px;
+    font-weight: 600;
+    border-radius: 0px;
+}
+
+@media only screen and (min-width:768px) {
+    .container-fluid {
+        width: 95%;
+        margin: auto;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/* ==========================
+2. Main Header
+=========================== */
+
+.neo-main-header {
+    background-color: #1c201f;
+    padding: 15px 0px;
+}
+
+.neo-main-header .bg-light {
+    background-color: #1c201f !important;
+}
+
+.neo-main-header .navbar {
+    padding: 0px;
+}
+
+.neo-main-header .navbar .navbar-brand {
+    padding: 0px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(203, 203, 203, 1);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(203, 203, 203, 1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(203, 203, 203, 1);
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.navbar-toggler i {
+    color: #6f7777;
+}
+
+
+/* mobile navbar sidebar under lg breakpoint */
+
+@media (max-width: 992px) {
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -45%;
+        transition: all 0.2s ease;
+    }
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        height: auto;
+        padding-top: 50px;
+        width: 45%;
+        background-color: #1c201f;
+        transition: left 0.35s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .navbar-collapse.show .navbar-nav li {
+        border-bottom: 1px solid #000;
+        padding: 10px 25px;
+    }
+    .navbar-collapse.show .navbar-nav li a {
+        display: block;
+    }
+}
+
+
+/* ====================================
+3. Bannner
+====================================== */
+
+.neo-banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .neo-banner {
+        background-position: top center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    .neo-banner {
+        background-position: top right;
+        background-size: cover;
+    }
+}
+
+.neo-banner .banner-text h3 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.neo-banner .banner-text {
+    padding: 12% 0px;
+}
+
+.neo-banner .banner-text h4 {
+    font-size: 26px;
+    color: #fff;
+    line-height: 35px;
+    margin: 35px auto;
+}
+
+
+/* =======================
+4. Get Access to Loan
+========================*/
+
+.neo-get-access-loan {
+    background-color: #202828;
+    padding-bottom: 60px;
+}
+
+.neo-get-access-loan .neo-get-access-loan-text {
+    padding: 60px 0px 25px;
+}
+
+.neo-get-access-loan .neo-get-access-loan-text h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.neo-get-access-loan .neo-get-access-loan-text p {
+    color: #f2f2f2;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+@media only screen and (min-width:768px) {
+    .neo-get-access-loan .neo-get-access-loan-text h3 {
+        font-size: 32px !important;
+    }
+    .neo-get-access-loan .neo-get-access-loan-text p {
+        margin: 20px 10%;
+        font-size: 22px !important;
+    }
+}
+
+.neo-loan-block {
+    margin: 0px -15px;
+}
+
+.neo-loan-block .loan-block-total {
+    width: 100%;
+    background-color: #1c2120;
+    padding: 30px 15px;
+    box-shadow: 0px 30px 20px -20px black;
+    margin: 15px auto;
+}
+
+.neo-loan-block .loan-block-total .loan-block-img img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.neo-loan-block .loan-block-total .loan-block-text h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 15px auto;
+}
+
+.neo-loan-block .loan-block-total .loan-block-text p {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* ==============================
+5. Why Choose
+================================= */
+
+.neo-why-choose {
+    background-color: #1c2120;
+    padding: 120px 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+    .neo-why-choose {
+        height: 100%;
+    }
+}
+
+.neo-why-choose h3 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.neo-why-choose .why-choose {
+    margin-top: 35px;
+}
+
+.neo-why-choose .why-choose .why-choose-block {
+    background-color: #2b3536;
+    padding: 30px 15px;
+    margin: 15px auto;
+}
+
+.neo-why-choose .why-choose .why-choose-block .why-choose-icon img {
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.neo-why-choose .why-choose .why-choose-block .why-choose-text h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 15px auto;
+    font-weight: 600;
+}
+
+.neo-why-choose .why-choose .why-choose-block .why-choose-text p {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+/* ===================================
+6. Discounting Steps 
+======================================*/
+
+.neo-discounting-steps {
+    background-color: #202928;
+    padding: 30px 0px;
+}
+
+@media only screen and (min-width:900px) {
+    .neo-discounting-steps {
+        padding-top: 250px;
+    }
+}
+
+.neo-discounting-steps .discounting-steps h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block {
+    margin: 15px auto;
+    padding: 30px 0px;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .discounting-img img {
+    height: 200px;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .total-step {
+    position: relative;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .total-step .step-count {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid #01c98a;
+    color: #01c98a;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    position: relative;
+    margin: 30px auto;
+    z-index: 1;
+    background-color: #202828;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .total-step .step-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #01c98a;
+    top: 50%;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .total-step .step-line-one {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    right: 0;
+    background-color: #01c98a;
+    top: 50%;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .total-step .step-line-three {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #01c98a;
+    top: 50%;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .discounting-text h3 {
+    font-size: 24px;
+    margin: 15px auto;
+}
+
+.neo-discounting-steps .discounting-steps .discounting-block .discounting-text p {
+    font-size: 16px;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+
+/* =================================
+7. Testmonials
+===================================*/
+
+.neo-testmonial {
+    background-color: #1C2120;
+    padding: 60px 0px;
+    width: 100%;
+    margin-left: 0;
+}
+
+@media only screen and (min-width:768px) {
+    .neo-testmonial {
+        background-color: #1C2120;
+        padding: 60px 0px;
+        width: 150% !important;
+        margin-left: -25% !important;
+    }
+    .neo-testmonial .card {
+        margin: unset !important;
+    }
+}
+
+.neo-testmonial h3 {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.neo-testmonial .card {
+    background-color: #2b3536;
+    position: relative;
+    margin: 0px 30px;
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: unset !important;
+}
+
+.neo-testmonial .card p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.profile-pic {
+    width: 100px !important;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: -50px !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    font: initial !important;
+    height: 35px !important;
+    border: 1px solid rgba(203, 203, 203, 1) !important;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: 0 0;
+    color: #ffffff !important;
+    border: 1px solid #fff;
+    padding: 0px 20px !important;
+    width: 35px;
+    font-size: 45px !important;
+}
+
+.owl-next span,
+.owl-prev span {
+    position: relative;
+    top: -12px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #0D47A1 !important;
+    background-color: transparent !important
+}
+
+.owl-dots {
+    display: none
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.item {
+    display: none
+}
+
+.next {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.prev {
+    display: block !important;
+    position: relative;
+    transform: scale(0.8);
+    transition-duration: 0.3s;
+    opacity: 0.6
+}
+
+.item.show {
+    display: block;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 999px) {
+    .next,
+    .prev {
+        transform: scale(1);
+        opacity: 1
+    }
+    .item {
+        display: block !important
+    }
+}
+
+
+/* ========================================
+8.FAQ
+========================================== */
+
+.neo-frequent_sec {
+    background-color: #212828;
+    padding: 60px 0px;
+}
+
+.acc_btn:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.frequent_sec {
+    background-color: #212828;
+}
+
+.card_header_color {
+    background-color: #212828!important;
+}
+
+.card-header {
+    padding: 15px 0px;
+}
+
+.card-header .btn {
+    padding: 0px;
+}
+
+.card-header .btn i {
+    margin-right: 10px;
+}
+
+.accordion>.card:not(:last-of-type) {
+    border-radius: 0px;
+}
+
+.card-body {
+    background-color: #2b3536;
+    padding: 15px;
+}
+
+.card-body p {
+    color: #f2f2f2;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+/* ===================================
+9. Need Against Invoice
+===================================== */
+
+.need_help_against_invoice {
+    background-color: #1C2120!important;
+    padding: 60px 0px;
+}
+
+.need_help_against_invoice h3 {
+    margin-bottom: 30px;
+}
+
+.speak_to_expert .btn {
+    background-color: #17cb85;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* ======================================
+10. Footer
+======================================== */
+
+footer {
+    padding: 60px 0px 20px;
+}
+
+footer ul {
+    margin-bottom: 30px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    padding: 8px 0px;
+}
+
+.all {
+    font-weight: bold;
+}
+
+.footer_bg {
+    background-color: #000000;
+}
+
+.footer_row_two p {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.footer_title {
+    margin-bottom: 30px;
+}
+
+.footer_title h6 {
+    color: #17cb85;
+    margin-bottom: 10px;
+}
+
+.footer_title p.footer-para {
+    color: rgba(203, 203, 203, 1);
+    line-height: 30px;
+}
+
+
+/* .footer-para {
+    color: #8b8b8b!important;
+} */
+
+@media only screen and (min-width:768px) {
+    .footer_row_two p {
+        font-size: 12px;
+        text-align: left !important;
+    }
+}
